@@ -34,11 +34,11 @@ public class ControlinfoController extends HttpServlet {
 	
 	private void processarRequisicao(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		//System.out.println("Processar Requisição");
-		ControlinfoHelper controlinfoHelper = new ControlinfoHelper(request);
-		InterfaceCommand comando = controlinfoHelper.getCommand();
-		String pagina = comando.execute(request, response);
-		request.getRequestDispatcher(pagina).include(request, response);
+		System.out.println("Processar Requisição");
+		//ControlinfoHelper controlinfoHelper = new ControlinfoHelper(request);
+		//InterfaceCommand comando = controlinfoHelper.getCommand();
+		//String pagina = comando.execute(request, response);
+		//request.getRequestDispatcher(pagina).include(request, response);
 	}
 
 	/**
