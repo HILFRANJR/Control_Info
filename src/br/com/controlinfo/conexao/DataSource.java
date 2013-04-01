@@ -1,3 +1,5 @@
+// Projeto Control_Info
+
 package br.com.controlinfo.conexao;
 
 import java.sql.Connection;
@@ -25,6 +27,7 @@ public class DataSource implements InterfaceDataSource {
 			e.printStackTrace();
 		}
 	}
+	
 	@Override
 	public Connection getConnection() throws SQLException {
 		return DriverManager.getConnection(url, usuario, senha);
